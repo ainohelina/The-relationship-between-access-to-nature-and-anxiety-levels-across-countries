@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <title>Anxiety & Nature Visualizations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #e6f4ea, #b7e1c2);
+            margin: 0;
+            padding: 20px;
+            background-attachment: fixed;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 32px;
+        }
+
+        .corner-image {
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            width: 160px;
+            height: auto;
+            border-radius: 20px;
+            opacity: 0.95;
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Kaikkien muiden kuvaajien koko — jätetään 500px */
+        iframe {
+            width: 100%;
+            height: 600px;
+            border: none;
+        }
+
+        /* Forest timeline -kuvaaja */
+        .large-iframe {
+            height: 700px; /* Optimoitu koko */
+        }
+    </style>
+</head>
+<body>
+
+<img src="kuva1.png" alt="World Mental Health Day" class="corner-image">
+
+<h1 style="color: #2E8B57;">Anxiety & Nature – Interactive Visualizations</h1>
+
+<p style="
+    max-width: 900px;
+    margin: 0 auto 40px auto;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #2E8B57;">
+    This visualization is linked to the UN Sustainable Development Goals 3 
+    (Good health and well-being) and 15 (Life on land).
+    These interactive maps explore whether forest coverage relates to lower 
+    levels of anxiety across countries and how both develop over time.
+</p>
+
+<p style="
+    max-width: 900px;
+    margin: 0 auto 20px auto;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #2E8B57;">
+    First, to dive into this topic, we'll look at the anxiety percentages.
+
+<div class="card">
+    <h3>1. Anxiety by country 2017</h3>
+    <iframe src="vis1.html"></iframe>
+</div>
+
+<p style="
+    max-width: 900px;
+    margin: 0 auto 20px auto;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #2E8B57;">
+    Did any of the countries surprise you? I was surprised by Norway and New Zealand personally.
+
+<p style="
+    max-width: 900px;
+    margin: 0 auto 20px auto;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #2E8B57;">
+Next, we can look at a timeline that shows the change in forest area by country.
+
+
+<div class="card">
+    <h3>2. Forest coverage 1995–2020 timeline</h3>
+    <iframe src="forest_timeline.html" class="large-iframe"></iframe>
+</div>
+
+<p style="
+    max-width: 900px;
+    margin: 0 auto 20px auto;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #2E8B57;">
+Let's look at the Year 1995 forest coverage and global anxiety. What can we observe from these?
+
+<div class="card">
+    <h3>3. Forest coverage 1995</h3>
+    <iframe src="vis6.html"></iframe>
+</div>
+
+<div class="card">
+    <h3>4. Global anxiety 1995</h3>
+    <iframe src="vis2.html"></iframe>
+</div>
+<p style="
+    max-width: 900px;
+    margin: 0 auto 20px auto;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #2E8B57;">
+Then, we can look at and compare these findings with the Year 2017. What kind of differences can you discover?
+
+<div class="card">
+    <h3>5. Forest coverage 2017</h3>
+    <iframe src="vis5.html"></iframe>
+</div>
+
+<div class="card">
+    <h3>6. Global anxiety 2017</h3>
+    <iframe src="vis3.html"></iframe>
+</div>
+
+<p style="
+    max-width: 900px;
+    margin: 0 auto 20px auto;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #2E8B57;">
+Then, we can combine these results and see which countries have had the biggest change in anxiety disorders over the observed years.
+
+<div class="card">
+    <h3>7. Change in anxiety levels between 1995–2017</h3>
+    <iframe src="vis4.html"></iframe>
+</div>
+
+<p style="
+    max-width: 900px;
+    margin: 0 auto 20px auto;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #2E8B57;">
+The last visualization is a heatmap of forest coverage vs. anxiety disorders.
+<div class="card">
+    <h3>8. Correlation map</h3>
+    <iframe src="korrelation.html?v=2"></iframe>
+</div>
+
+
+
+</body>
+</html>
